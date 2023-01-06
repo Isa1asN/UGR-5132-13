@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="Home_style.css">
 </head>
 <body>
   <nav>
-      <div>
+      <div id="logoAnd_name">
           <img src="images/logo.jpeg" alt="image logo">
-          <h1>ETorithm</h1>
+          <h1 id="w_name">ETorithm</h1>
       </div>
-      <div>
+      <div class="navigation">
           <ul>
-            <li><a href="Home.html">Home</a></li>
+            <img src="images/close_icon.png" alt="close_icon" id="close_btn">
+            <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Blog.html">Blog</a></li>
             <li><a href="Courses.html">Courses</a></li>
@@ -24,14 +26,15 @@
             <li><a href="Team.html">Team</a></li>
             <li><a href="https://www.poki.com">Entertain</a></li>
           </ul>
-      </div>
+          <img src="images/menu_icon.png" alt="humburger" id="menu_btn">
+      </div> 
   </nav>
-  <main>
-          <div>
-            <div>Boost your technical skills with ETorithm</div>
+  <main id="home">
+          <div class="slider">
+            <div class="slogan">Boost your technical skills with ETorithm</div>
           </div>
       <br>
-      <div>
+      <div id="content">
 
         <p>Welcome to Etorithm!</p><hr><br>
         <p>If you are planning to learn HTML, CSS, JAVASCRIPT, web development and other programming related concepts, you are at the right place!</p>
@@ -39,20 +42,20 @@
         <p>Stay connected with us and use our courses for your own use for free.</p>
       </div>
       
-    <form>
+    <form name="submit-to-google-sheet">
       <input type="email" title="Insert your email address here" name="Email" id="emailform" placeholder="Your email" required>
-       <label for="emailform"> <h1>Enter email to receive newsletters</h1></label>
-      <button type="submit">Subscribe</button>
+       <label for="emailform"> <h1 id="enter_email">Enter email to receive newsletters</h1></label>
+      <button type="submit" id="subscribe"  >Subscribe</button>
     </form>
-    <span></span>
+    <span id="msg"></span>
   </main>
 <footer>
-  <div><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
+  <div class="loc"><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
   
-    <div>
+    <div class="copyright">
       <p>copyright 	&#169;2023 All Rights Reserved</p>
     </div>
-    <div>
+    <div class="pro_links">
       <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
       <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
       <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
@@ -60,6 +63,6 @@
       <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
     </div>
 </footer>
-
+<script src="script/Home_script.js"></script>
 </body>
 </html>
