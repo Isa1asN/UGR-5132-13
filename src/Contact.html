@@ -6,52 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Contact_style.css">
 </head>
 <body>
   <nav>
-      <div>
-          <img src="images/logo.jpeg" alt="image logo">
-          <h1>ETorithm</h1>
-      </div>
-      <div>
-          <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="Code.html">Code</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="https://www.poki.com">Entertain</a></li>
-          </ul>
-      </div>
-  </nav>
-
-<main>
-    <div>
-      <div>
-        <div>
+    <div id="logoAnd_name">
+        <img src="images/logo.jpeg" alt="image logo">
+        <h1 id="w_name">ETorithm</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+          <img src="images/close_icon.png" alt="close_icon" id="close_btn">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Courses.html">Courses</a></li>
+          <li><a href="Code.html">Code</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="https://www.poki.com">Entertain</a></li>
+        </ul>
+        <img src="images/menu_icon.png" alt="humburger" id="menu_btn">
+    </div> 
+</nav>
+  <main>
+    <div class="container">
+      <div class="contact_side">
+        <div id="locate">
           <h4>Headquarters</h4>
           <div> <img src="images/headq_icon.png" alt="headquarters_icon"> 4 kilo, Addis Ababa, Ethiopia</div>
         </div>
         <br>
-        <div>
+        <div id="ph_no">
           <h4>Phone</h4>
           <div> <img src="images/phone_icon.png" alt="phone_icon"> (+251)951019663</div>
           <div>(+251)974773386</div>
         </div>
         <br>
-        <div>
+        <div id="follow">
           <h4>Follow Us</h4>
             <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
             <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
-            <a href="https://www.youtube.com/@etorithm"><img src="images/you_icon.png" alt="Youtube_icon"></a>
+            <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
             <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
-            <a href="https://t.me/etorithm"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
+            <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
         </div>
       </div>
         <form >
-            <h1>Get in touch</h1>
+            <h1 id="get_in_touch">Get in touch</h1>
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your full name" required>
 
@@ -67,26 +69,24 @@
             <button type="submit">Send</button>
         </form>
     </div>
-  
-  <!--This is a google map shared embed link around the location of ARAT KILO-->
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.6543002380272!2d38.76288771087365!3d9.03393092413753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8589e4c4a803%3A0xbae724e3b927f424!2sAddis%20Ababa%20University%20%7C%20Natural%20Sciences%20Campus!5e0!3m2!1sen!2set!4v1671882176257!5m2!1sen!2set" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </main>
-
-<footer>
-  <div><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
-  
-    <div>
-      <p>copyright 	&#169;2023 All Rights Reserved</p>
-    </div>
-    <div>
-      <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
-      <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
-      <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
-      <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
-      <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
-    </div>
-</footer>
-
-</body>
-</html>
+  <footer>
+    <div class="loc"><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
+    
+      <div class="copyright">
+        <p>copyright 	&#169;2023 All Rights Reserved</p>
+      </div>
+      <div class="pro_links">
+        <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
+        <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
+        <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
+        <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
+        <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
+      </div>
+  </footer>
+  <script src="script/Contact_script.js"></script>
+  </body>
+  </html>
