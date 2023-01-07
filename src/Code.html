@@ -4,65 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code</title>
     <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Code_style.css">
+    <title>Code</title>
 </head>
-<body>
-  <nav>
-      <div>
-          <img src="images/logo.jpeg" alt="image logo">
-          <h1>ETorithm</h1>
-      </div>
-      <div>
-          <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="Code.html">Code</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="https://www.poki.com">Entertain</a></li>
-          </ul>
-      </div>
-  </nav>
 
- <main>
-        <div>
-            <div>
-                <div>
-                    <label for="html_textarea"><h1><img src="images/html_icon.png" alt="html_logo">HTML</h1></label>
+<body>
+    <nav>
+        <div id="logoAnd_name">
+            <img src="images/logo.jpeg" alt="image logo">
+            <h1 id="w_name">ETorithm</h1>
+        </div>
+        <div class="navigation">
+            <ul>
+              <img src="images/close_icon.png" alt="close_icon" id="close_btn">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="Courses.html">Courses</a></li>
+              <li><a href="Code.html">Code</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Team.html">Team</a></li>
+              <li><a href="https://www.poki.com">Entertain</a></li>
+            </ul>
+            <img src="images/menu_icon.png" alt="humburger" id="menu_btn">
+        </div> 
+    </nav>
+    <main>
+        <div class="code-editor">
+            <div class="code">
+                <div class="html-code">
+                    <label for="html_textarea"><h1><img src="images/html_icon.png" alt="">HTML</h1></label>
                     <textarea id="html_textarea" spellcheck="false"></textarea>
                 </div>
-                <div>
-                    <label for="css_textarea"><h1><img src="images/CSS_icon.png" alt="css_logo">CSS</h1></label>
+                <div class="css-code">
+                    <label for="css_textarea"><h1><img src="images/CSS_icon.png" alt="">CSS</h1></label>
                     <textarea id="css_textarea" spellcheck="false"></textarea>
                 </div>
-                <div>
-                    <label for="js_textarea"><h1><img src="images/js_icon.png" alt="js_logo">JS</h1></label>
+                <div class="js-code">
+                    <label for="js_textarea"><h1><img src="images/js_icon.png" alt="">JS</h1></label>
                     <textarea id="js_textarea" spellcheck="false"></textarea>
                 </div>
             </div>
-    <!--The Iframe will be used to display the output of the codes, using simple JS-->
-
-            <iframe></iframe>
+            <iframe id="result"></iframe>
             </div>
     </main>
-
-<footer>
-  <div><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
-  
-    <div>
-      <p>copyright 	&#169;2023 All Rights Reserved</p>
-    </div>
-    <div>
-      <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
-      <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
-      <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
-      <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
-      <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
-    </div>
-</footer>
-
+    <footer>
+        <div class="loc"><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
+        
+          <div class="copyright">
+            <p>copyright 	&#169;2023 All Rights Reserved</p>
+          </div>
+          <div class="pro_links">
+            <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
+            <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
+            <a href="#"><img src="images/you_icon.png" alt="Youtube_icon"></a>
+            <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
+            <a href="#"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
+          </div>
+      </footer>
+      <script src="script/Code_script.js"></script>
 </body>
 </html>
