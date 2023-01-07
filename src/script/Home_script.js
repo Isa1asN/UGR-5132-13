@@ -13,9 +13,7 @@
         input.readOnly = true;
         msg.innerText = "Thanks for subscribing!"
         msg.style = 'color: red;'
-        setTimeout(function(){
-          btn.style = 'display:none;'
-        },5000)
+        btn.style = 'display:none;'
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
