@@ -1,7 +1,10 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbymARiZlAu1kHvVuCKtv39dloWLFyHk-mjUAo3GN78-psRxwnoC1OZMcUmwLWNu4yRS9Q/exec'
 
 const form = document.forms['contact-list']
-const btn = document.getElementById('btn-submit')
+const btn = document.getElementById('btn-submit').addEventListener('click',()=>{
+  btn.style.display = 'none'
+  confirm("Message sent succesfully, we'll be in touch soon."
+})
 
 
 form.addEventListener('submit', e => {
