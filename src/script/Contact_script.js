@@ -12,7 +12,6 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
       console.log('Success!', response)
-      btn.style.display = 'none'
       confirm("Message sent succesfully, thanks we'll be in touch.")
 
   })
