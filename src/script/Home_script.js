@@ -5,6 +5,15 @@
   const input = document.getElementById('emailform')
   const msg = document.getElementById('enter_email')
   const btn = document.getElementById('subscribe')
+  
+  btn.addEventListener('click', ()=>{
+    input.readOnly = true;
+    msg.innerText = "Thanks for subscribing!"
+    msg.style = 'color: red;'
+    btn.style = 'display: none;'
+  }
+)
+                       
 
   form.addEventListener('submit', e => {
     e.preventDefault()
@@ -13,7 +22,7 @@
         input.readOnly = true;
         msg.innerText = "Thanks for subscribing!"
         msg.style = 'color: red;'
-        btn.style = 'display:none;'
+        btn.style = 'display: none;'
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
