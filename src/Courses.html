@@ -5,74 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/Courses_style.css">
+    <link rel="shortcut icon" href="../images/logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div id="logoAnd_name">
-        <img src="images/logo.jpeg" alt="image logo">
-        <h1 id="w_name">ETorithm</h1>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <div class="navbar-brand" id="logoAnd_name">
+          <img src="../images/logo.jpeg" alt="image logo">
+          <h1 id="w_name">ETorithm</h1>
+      </div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" area-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item"><a class="nav-link" href="../HOME/home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../ABOUT/About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../BLOG/Blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../COURSES/Courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="../CODE/Code.html">Code</a></li>
+            <li class="nav-item"><a class="nav-link" href="../CONTACT/Contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../TEAM/Team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.poki.com">Entertain</a></li>
+          </ul>
+      </div> 
     </div>
-    <div class="navigation">
-        <ul>
-          <img src="images/close_icon.png" alt="close_icon" id="close_btn">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-          <li><a href="Courses.html">Courses</a></li>
-          <li><a href="Code.html">Code</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Team.html">Team</a></li>
-          <li><a href="https://www.poki.com">Entertain</a></li>
-        </ul>
-        <img src="images/menu_icon.png" alt="humburger" id="menu_btn">
-    </div> 
-</nav>
+  </nav>
   <main>
     <form >
-      <label for="search">Search courses & PDF</label>
-      <input id="search" placeholder="search" type="text">
+      <label class="form-label" for="search">Search courses & PDF</label>
+      <input class="form-control" id="search" placeholder="search" type="text">
     </form>
     <h1 id="ebooks_h1">ebooks</h1>
 <!--___________________the ebook grid start______________________-->
-    <div class="grid">
-      <div class="grid-item">
+    <div class="container">
+      <div class="row gy-3">
+      <div class="col">
         <div class="card">
-          <img class="card-img" src="images/html_course_thumb.JPG" alt="html_thumbnail" />
-          <div class="card-content">
+          <img class="card-img-top" src="../images/html_course_thumb.JPG" alt="html_thumbnail" />
+          <div class="card-body">
             <h3 class="card-header">HTML, CSS, JS</h3>
             <p class="card-text">
               Teach yourself HTML, CSS & JS All in one
             </p>
-           <a href="https://drive.google.com/file/d/1TsYviseoRrUMwJZCU-ztJ26Uizfk_IBZ/view?usp=share_link"> <button class="card-btn">Download </button></a>
+           <a href="https://drive.google.com/file/d/1TsYviseoRrUMwJZCU-ztJ26Uizfk_IBZ/view?usp=share_link"> <button class="btn btn-outline-success">Download </button></a>
           </div>
         </div>
       </div>
-      <div class="grid-item">
+      <div class="col">
         <div class="card">
-          <img class="card-img" src="images/py_course_thumb.JPG" alt="python_thumbnail"/>
-          <div class="card-content">
+          <img class="card-img-top" src="../images/py_course_thumb.JPG" alt="python_thumbnail"/>
+          <div class="card-body">
             <h3 class="card-header">Python basics</h3>
             <p class="card-text">
               A practical introduction to Python
             </p>
-            <a href="https://drive.google.com/file/d/1DbjX03X3eSeNKUBcJbbUSOQWyVc_5y6B/view?usp=share_link"><button class="card-btn">Download</button></a>
+            <a href="https://drive.google.com/file/d/1DbjX03X3eSeNKUBcJbbUSOQWyVc_5y6B/view?usp=share_link"><button class="btn btn-outline-success">Download</button></a>
           </div>
         </div>
       </div>
-      <div class="grid-item">
+      <div class="col">
         <div class="card">
-          <img class="card-img" src="images/web_course_thumb.JPG" alt="web course thumbnail" />
-          <div class="card-content">
+          <img class="card-img-top" src="../images/web_course_thumb.JPG" alt="web course thumbnail" />
+          <div class="card-body">
             <h3 class="card-header">Web Design</h3>
             <p class="card-text">
               Modern web design and development       
             </p>
-            <a href="https://drive.google.com/file/d/1rDWsKEPqxEYP2F6taebQbKO_R0vpoqr3/view?usp=sharing"><button class="card-btn">Download </button></a>
+            <a href="https://drive.google.com/file/d/1rDWsKEPqxEYP2F6taebQbKO_R0vpoqr3/view?usp=sharing"><button class="btn btn-outline-success">Download </button></a>
           </div>
         </div>
       </div>
+    </div>
     </div>
     <a id="more_eb" href="#">Find more books&rarr;</a>
 
@@ -80,11 +87,13 @@
 
 <!--__________________________________the video tutorial grid start________________________-->
 <h1 id="vid_h1">Video tutorials</h1>
-<div class="grid_video_tutor">
-  <div class="grid-item">
+
+<div class="container">
+  <div class="row gy-3">
+  <div class="col">
     <div class="card">
-      <video controls poster="images/js_course_thumb.jpg" src="videos/course_1.mp4"></video>
-      <div class="card-content">
+      <video class="card-vid-top" controls poster="../images/js_course_thumb.jpg" src="../videos/course_1.mp4"></video>
+      <div class="card-body">
         <h3 class="card-header">Learn JS</h3>
         <p class="card-text">
           Javascript full course for begginers
@@ -92,10 +101,10 @@
       </div>
     </div>
   </div>
-  <div class="grid-item">
+  <div class="col">
     <div class="card">
-      <video controls poster="images/dsa_course_thumb.jfif" src="videos/course_1.mp4"></video>
-      <div class="card-content">
+      <video controls poster="../images/dsa_course_thumb.jfif" src="../videos/course_1.mp4"></video>
+      <div class="card-body">
         <h3 class="card-header">DSA</h3>
         <p class="card-text">
           Data structures & Alogorithms for beginners
@@ -103,10 +112,10 @@
       </div>
     </div>
   </div>
-  <div class="grid-item">
+  <div class="col">
     <div class="card">
-        <video controls poster="images/oop_course_thumb.jpg" src="videos/course_1.mp4"></video>
-      <div class="card-content">
+      <video controls poster="../images/oop_course_thumb.jpg" src="../videos/course_1.mp4"></video>
+      <div class="card-body">
         <h3 class="card-header">OOP</h3>
         <p class="card-text">
           Object Oriented Programming introduction for beginners       
@@ -115,25 +124,26 @@
     </div>
   </div>
 </div>
+</div>
 <a id="more_vid" href="#">Find more tutorials&rarr;</a>
 <!--__________________________________the video tutorial grid end________________________-->
 
 
   </main>
   <footer>
-    <div class="loc"><img src="images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
+    <div class="loc"><img src="../images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
     
       <div class="copyright">
         <p>copyright 	&#169;2023 All Rights Reserved</p>
       </div>
       <div class="pro_links">
-        <a href="#"><img src="images/fb_icon.png" alt="facebook_icon"></a>
-        <a href="#"><img src="images/insta_icon.png" alt="Instagram_icon"></a>
-        <a href="https://www.youtube.com/channel/UC-P0YihpcQKb7kgr8pXj-WQ"><img src="images/you_icon.png" alt="Youtube_icon"></a>
-        <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
-        <a href="https://t.me/etorithm"><img src="images/teleg_icon.png" alt="telegram_icon"></a>
+        <a href="#"><img src="../images/fb_icon.png" alt="facebook_icon"></a>
+        <a href="#"><img src="../images/insta_icon.png" alt="Instagram_icon"></a>
+        <a href="https://www.youtube.com/channel/UC-P0YihpcQKb7kgr8pXj-WQ"><img src="../images/you_icon.png" alt="Youtube_icon"></a>
+        <a href="#"><img src="../images/linkedin_icon.png" alt="linkedin_icon"></a>
+        <a href="https://t.me/etorithm"><img src="../images/teleg_icon.png" alt="telegram_icon"></a>
       </div>
   </footer>
-  <script src="script/Courses_script.js"></script>
+  <script src="script.js"></script>
   </body>
   </html>
