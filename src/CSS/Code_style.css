@@ -189,11 +189,4 @@ height: 1.375rem;
     height: 1.2rem;
   }
 }
-@media (max-width: 675px){
-  .slogan{
-    display: none;
-  }
-  .slider{
-    height: 70vh;
-  }
-}
+
