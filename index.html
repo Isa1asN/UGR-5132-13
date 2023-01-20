@@ -6,35 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="src/images/logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/CSS/Home_style.css">
 </head>
 <body>
-  <nav>
-      <div id="logoAnd_name">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <div class="navbar-brand" id="logoAnd_name">
           <img src="src/images/logo.jpeg" alt="image logo">
           <h1 id="w_name">ETorithm</h1>
       </div>
-      <div class="navigation">
-          <ul>
-            <img src="src/images/close_icon.png" alt="close_icon" id="close_btn">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="src/About.html">About</a></li>
-            <li><a href="src/Blog.html">Blog</a></li>
-            <li><a href="src/Courses.html">Courses</a></li>
-            <li><a href="src/Code.html">Code</a></li>
-            <li><a href="src/Contact.html">Contact</a></li>
-            <li><a href="src/Team.html">Team</a></li>
-            <li><a href="https://www.poki.com">Entertain</a></li>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" area-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/Blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/Courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/Code.html">Code</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/Contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/Team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.poki.com">Entertain</a></li>
           </ul>
-          <img src="src/images/menu_icon.png" alt="humburger" id="menu_btn">
       </div> 
+    </div>
   </nav>
   <main id="home">
           <div class="slider">
             <div class="slogan">Boost your technical skills with ETorithm</div>
           </div>
       <br>
-      <div id="content">
+      <div class="container">
 
         <p>Welcome to Etorithm!</p><hr><br>
         <p>If you are planning to learn HTML, CSS, JAVASCRIPT, web development and other programming related concepts, you are at the right place!</p>
@@ -43,9 +48,9 @@
       </div>
       
     <form name="submit-to-google-sheet">
-      <input type="email" title="Insert your email address here" name="Email" id="emailform" placeholder="Your email" required>
-       <label for="emailform"> <h1 id="enter_email">Enter email to receive newsletters</h1></label>
-      <button type="submit" id="subscribe"  >Subscribe</button>
+      <label for="emailform" class="form-label mx-auto"> <h1 id="enter_email">Enter email to receive newsletters</h1></label>
+      <input type="email" title="Insert your email address here" name="Email" class="form-control ms-5" id="emailform" placeholder="Your email" required>
+      <button id="subscribe" type="submit" class="btn btn-outline-primary ms-5">Subscribe</button>
     </form>
     <span id="msg"></span>
   </main>
