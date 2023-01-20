@@ -14,13 +14,5 @@ form.addEventListener('submit', e => {
 
     .catch(error => console.error('Error!', error.message))
 })
-// _______________________________________navbar_________________________________________________
-const close = document.getElementById('close_btn')
-const menu = document.getElementById('menu_btn')
-close.addEventListener('click', ()=>{
-  document.querySelector('nav .navigation ul').classList.remove('active')
-})
-menu.addEventListener('click',()=>{
-  document.querySelector('nav .navigation ul').classList.add('active')
-})
-// __________________________________________________________________________________________
+
+
