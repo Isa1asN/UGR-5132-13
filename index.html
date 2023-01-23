@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="src/CSS/Home_style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg w-100 bg-gradient-primary text-white d-flex position-fixed ">
     <div class="container">
       <div class="navbar-brand" id="logoAnd_name">
-          <img src="src/images/logo.jpeg" alt="image logo">
+          <img class="rounded-circle" src="../images/logo.jpeg" alt="image logo">
           <h1 id="w_name">ETorithm</h1>
       </div>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" area-label="Expand Navigation">
@@ -22,13 +22,13 @@
       </button>
       <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav nav-pills">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/About.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/Blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/Courses.html">Courses</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/Code.html">Code</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/Contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="src/Team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="../HOME/home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../ABOUT/About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../BLOG/Blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../COURSES/Courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="../CODE/Code.html">Code</a></li>
+            <li class="nav-item"><a class="nav-link" href="../CONTACT/Contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../TEAM/Team.html">Team</a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.poki.com">Entertain</a></li>
           </ul>
       </div> 
@@ -48,24 +48,24 @@
       </div>
       
     <form name="submit-to-google-sheet">
-      <label for="emailform" class="form-label mx-auto"> <h1 id="enter_email">Enter email to receive newsletters</h1></label>
-      <input type="email" title="Insert your email address here" name="Email" class="form-control ms-5" id="emailform" placeholder="Your email" required>
+      <label for="emailform" class="form-label mx-auto"> <h1 id="enter_email" class="d-block">Enter email to receive newsletters</h1></label>
+      <input type="email" title="Insert your email address here" name="Email" class="form-control w-50 ms-5" id="emailform" placeholder="Your email" required>
       <button id="subscribe" type="submit" class="btn btn-outline-primary ms-5">Subscribe</button>
     </form>
     <span id="msg"></span>
   </main>
-<footer>
-  <div class="loc"><img src="src/images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
+<footer class="d-flex flex-column mt-lg-5 w-100 bottom-0">
+  <div class="loc d-inline-block position-relative"><img src="../images/loc_icon.png" alt="location Icon"> Addis Ababa, Ethiopia</div>
   
-    <div class="copyright">
+    <div class="copyright d-inline-block position-relative">
       <p>copyright 	&#169;2023 All Rights Reserved</p>
     </div>
-    <div class="pro_links">
-      <a href="#"><img src="src/images/fb_icon.png" alt="facebook_icon"></a>
-      <a href="#"><img src="src/images/insta_icon.png" alt="Instagram_icon"></a>
-      <a href="#"><img src="src/images/you_icon.png" alt="Youtube_icon"></a>
-      <a href="#"><img src="src/images/linkedin_icon.png" alt="linkedin_icon"></a>
-      <a href="#"><img src="src/images/teleg_icon.png" alt="telegram_icon"></a>
+    <div class="pro_links position-relative d-inline align-items-end ms-auto">
+      <a href="#"><img src="../images/fb_icon.png" alt="facebook_icon"></a>
+      <a href="#"><img src="../images/insta_icon.png" alt="Instagram_icon"></a>
+      <a href="#"><img src="../images/you_icon.png" alt="Youtube_icon"></a>
+      <a href="#"><img src="../images/linkedin_icon.png" alt="linkedin_icon"></a>
+      <a href="#"><img src="../images/teleg_icon.png" alt="telegram_icon"></a>
     </div>
 </footer>
 <script src="src/script/Home_script.js"></script>
