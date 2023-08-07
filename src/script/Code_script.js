@@ -23,7 +23,7 @@ localStorage.setItem('css_code', cssCode.value);
 localStorage.setItem('js_code', jsCode.value);
 
 // Executing HTML, CSS & JS code
-result.contentDocument.body.innerHTML = <style>${localStorage.css_code}</style> + localStorage.html_code;
+result.contentDocument.body.innerHTML = `<style>${localStorage.css_code}</style>` + localStorage.html_code;
 result.contentWindow.eval(localStorage.js_code);
 console.log("run function executed");
 }
