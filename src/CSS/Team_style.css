@@ -106,12 +106,7 @@ nav .navigation{
     text-align: center;
 }
 #devpic img{
-    margin-top: 2.5rem;
-    width: 16rem;
-    height: 14.5rem;
-    border-radius: 50%;
-    margin-left: 10%;
-    margin-right: auto;
+    display:none;
 }
 
 .abt_zdev{
